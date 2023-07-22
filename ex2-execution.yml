@@ -1,6 +1,6 @@
 -
   name: pb on yum and service example
-  hosts: client
+  hosts: client1
   tasks:
    - name: code to install httpd application
      yum:
