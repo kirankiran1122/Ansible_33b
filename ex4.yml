@@ -6,4 +6,3 @@
     yum:
      name: git
      state: present
-     
