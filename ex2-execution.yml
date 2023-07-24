@@ -7,7 +7,7 @@
      name: http
      state: present
 
-   - name: code to start httpd services
-     service:
-     name: httpd
-     state: started
+     - name: code to start httpd services
+       service:
+       name: httpd
+       state: started
