@@ -1,20 +1,21 @@
 -
- name: pb on use case of file and lineinfile module
+ name: pb on use case of multipel module
  hosts: client1
  tasks:
-  - name: code to create a folder
+  - name: code to create directory using file
     file:
      path: /opt/india
      state: directory
-  - name: code to create a file
+  - name: code to create a file "Russia.txt"
     file:
      path: /opt/india/Russia.txt
      state: touch
-  - name: code to give execute premissions
+  - name: code to write conten "Hello world"
+    lineinfile:
+     path: /opt/india/Russia.txt
+     state: present
+     line: 'Hello world'
+   - name: code to give execute premission to the file
     file:
      path: /opt/india/Russia.tax
      mode: u+x
-  - name: code to write the message into file
-    lineinfile:
-     path: /opt/india/Russia.txt
-     line: 'Hello world'
