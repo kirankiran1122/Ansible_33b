@@ -1,0 +1,9 @@
+-
+ name: pb on command module
+ hosts: client1
+ tasks:
+  - name: code to install git app
+    yum:
+     name: git
+     state: present
+     
