@@ -1,0 +1,21 @@
+-
+ name: pb on use case of file and lineinfile module
+ hosts: client1
+ tasks:
+  - name: code to create a folder
+    file:
+     path: /opt/india
+     state: director
+  - name: code to create a file
+    file:
+     path: /opt/india/Russia.txt
+     state: touch
+  - name: code to give execute premissions
+    file:
+     path: /opt/india/Russia.tax
+     mode: u+x
+  - name: code to write the message into file
+    lineinfile:
+     path: /opt/india/Russia.txt
+     line: 'Hello world'
+        
