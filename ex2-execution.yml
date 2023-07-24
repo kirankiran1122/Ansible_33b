@@ -4,7 +4,7 @@
  tasks:
   - name: code to install httpd application
     yum:
-      name: http
+      name: httpd
       state: present
 
   - name: code to start httpd services
