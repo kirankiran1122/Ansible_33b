@@ -29,7 +29,7 @@
 
   - name: code to create file
     file:
-     path: /opy/apache-logs/apache-log.logs
+     path: /opt/apache-logs/apache-log.logs
      state: touch
 
   - name: code to write a massage into file
@@ -45,4 +45,4 @@
      <h1> ANSIBLE PROJECT SAMPLE </h1>
      </body>
      <html>"
-     
+
